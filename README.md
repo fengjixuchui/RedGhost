@@ -1,40 +1,44 @@
 # RedGhost
 Linux post exploitation framework designed to assist red teams in persistence, reconnaissance, privilege escalation and leaving no trace. 
-![RG](https://user-images.githubusercontent.com/44454186/60386498-f5b2b100-9a84-11e9-92f7-e05ed9021065.PNG)
+![RG](https://user-images.githubusercontent.com/44454186/61165432-0ac12280-a510-11e9-8a44-191c36d49fe5.PNG)
+
 - Payloads
 
-  Function to generate various encoded reverse shells in
-  netcat, bash, python, php, ruby, perl
+Function to generate various encoded reverse shells in
+netcat, bash, python, php, ruby, perl
 
+- SudoInject
 
-- lsWrapper 
+Function to inject sudo command with wrapper function to run a reverse root shell everytime "sudo" is run for privilege     escalataion
 
-  Function to wrap the "ls" command with payload to run payload everytime "ls" is run for persistence
+- lsInject 
+
+Function to inject the "ls" command with a wrapper function to run payload everytime "ls" is run for persistence
 
 
 - Crontab
 
-  Function to create cron job that downloads and runs payload every minute for persistence
+Function to create cron job that downloads payload from remote server and runs payload every minute for persistence
 
 
 - GetRoot
 
-  Function to try various methods to escalate privileges
+Function to try various methods to escalate privileges
 
 
 - Clearlogs
 
-  Function to clear logs and make investigation with forensics difficult
+Function to clear logs and make investigation with forensics difficult
 
 
 - MassInfoGrab
 
-  Function to grab mass information on system
+Function to grab mass reconaissance/information on system
 
 
 - BanIp
 
-  Function to BanIp
+Function to BanIp using iptables
 
 
 ## Installation
